@@ -33,7 +33,7 @@ public class Commande {
     @Column(nullable = false)
     private BigDecimal totalPrice;
 
-    private String deliveryAddress;
+
 
     @OneToMany(mappedBy = "commande", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CommandeElem> items = new ArrayList<>();
