@@ -18,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CommandeController {
 
-    private final OrderService orderService;
+    private final CommandeService orderService;
 
     @GetMapping
     @PreAuthorize("hasRole('ADMIN')")
